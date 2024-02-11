@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         task1();
     }
-
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] ledgerArrays = new int[30];
@@ -13,7 +12,6 @@ public class Main {
         }
         return ledgerArrays;
     }
-
     public static void task1() {
         int[] ledgerArrays = generateRandomArray();
         System.out.println(Arrays.toString(ledgerArrays));
@@ -46,5 +44,6 @@ public class Main {
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
+
     }
 }
