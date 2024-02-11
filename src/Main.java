@@ -23,13 +23,13 @@ public class Main {
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
-        int maxPayment = -1;
+        int maxPayment = ledgerArrays[0];
         for (int i = 0; i < ledgerArrays.length; i++) {
             if (ledgerArrays[i] > maxPayment) {
                 maxPayment = ledgerArrays[i];
             }
         }
-        int minPayment = 210_000;
+        int minPayment = ledgerArrays[0];
         for (int i = 0; i < ledgerArrays.length; i++) {
             if (ledgerArrays[i] < minPayment) {
                 minPayment = ledgerArrays[i];
